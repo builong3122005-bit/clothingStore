@@ -96,6 +96,15 @@ img {
   gap: 20px;
   font-size: 1.2rem;
 }
+/* === MÃ MỚI ĐƯỢC CHUYỂN VÀO ĐÂY === */
+.header-actions a {
+  transition: color 0.3s ease;
+}
+.header-actions a:hover,
+.header-actions a.active {
+  color: var(--accent-color);
+}
+/* === KẾT THÚC MÃ MỚI === */
 .menu-toggle {
   display: none;
   font-size: 1.5rem;
