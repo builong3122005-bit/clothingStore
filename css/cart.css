@@ -1,0 +1,39 @@
+/* css/cart.css */
+.cart-table {
+  width: 100%;
+}
+.cart-table thead {
+  background-color: var(--secondary-color);
+}
+.cart-table th,
+.cart-table td {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+  vertical-align: middle;
+}
+.cart-product img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+.cart-summary {
+  background-color: var(--secondary-color);
+  padding: 30px;
+}
+.cart-summary h3 {
+  margin-bottom: 20px;
+}
+.summary-line {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.summary-line.total {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #ddd;
+}
