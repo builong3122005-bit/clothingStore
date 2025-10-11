@@ -4,12 +4,14 @@
     <title>Về chúng tôi - Shop ABC</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap-grid.min.css"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
 
     <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/grid.css" />
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/static-page.css" />
 
@@ -18,28 +20,30 @@
   </head>
   <body>
     <header class="header">
-      <div class="container d-flex justify-content-between align-items-center">
-        <h1 class="logo"><a href="index.html">ABC Shop</a></h1>
-        <nav class="navigation">
-          <ul class="nav-list">
-            <li><a href="index.html" class="nav-link">Trang chủ</a></li>
-            <li><a href="products.html" class="nav-link">Sản phẩm</a></li>
-            <li>
-              <a href="about.html" class="nav-link active">Về chúng tôi</a>
-            </li>
-            <li><a href="contact.html" class="nav-link">Liên hệ</a></li>
-            <li><a href="blog.html" class="nav-link">Blog</a></li>
-          </ul>
-        </nav>
-        <div class="header-actions">
-          <a href="login.html" aria-label="Tài khoản"
-            ><i class="fas fa-user"></i
-          ></a>
-          <a href="cart.html" aria-label="Giỏ hàng"
-            ><i class="fas fa-shopping-bag"></i
-          ></a>
-          <div class="menu-toggle" id="menu-toggle">
-            <i class="fas fa-bars"></i>
+      <div class="container">
+        <div class="header-wrapper">
+          <h1 class="logo"><a href="index.html">ABC Shop</a></h1>
+          <nav class="navigation">
+            <ul class="nav-list">
+              <li><a href="index.html" class="nav-link">Trang chủ</a></li>
+              <li><a href="products.html" class="nav-link">Sản phẩm</a></li>
+              <li>
+                <a href="about.html" class="nav-link active">Về chúng tôi</a>
+              </li>
+              <li><a href="contact.html" class="nav-link">Liên hệ</a></li>
+              <li><a href="blog.html" class="nav-link">Blog</a></li>
+            </ul>
+          </nav>
+          <div class="header-actions">
+            <a href="login.html" aria-label="Tài khoản"
+              ><i class="fas fa-user"></i
+            ></a>
+            <a href="cart.html" aria-label="Giỏ hàng"
+              ><i class="fas fa-shopping-bag"></i
+            ></a>
+            <div class="menu-toggle" id="menu-toggle">
+              <i class="fas fa-bars"></i>
+            </div>
           </div>
         </div>
       </div>
@@ -52,15 +56,15 @@
 
       <div class="container py-5">
         <section class="about-section">
-          <div class="row align-items-center">
-            <div class="col-lg-6 mb-4 mb-lg-0">
+          <div class="layout-two-col">
+            <div class="grid-item">
               <img
                 src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?q=80&w=2070&auto=format&fit=crop"
                 alt="Câu chuyện thương hiệu"
                 class="img-fluid rounded shadow"
               />
             </div>
-            <div class="col-lg-6">
+            <div class="grid-item">
               <div class="static-content">
                 <h2 class="section-subtitle">Câu Chuyện Thương Hiệu</h2>
                 <p>
@@ -84,8 +88,8 @@
 
         <section class="about-section text-center">
           <h2 class="section-subtitle">Giá Trị Cốt Lõi</h2>
-          <div class="row">
-            <div class="col-md-4">
+          <div class="grid grid-3">
+            <div class="grid-item">
               <div class="feature-box">
                 <div class="feature-icon"><i class="fas fa-tshirt"></i></div>
                 <h3 class="feature-title">Chất Lượng Hàng Đầu</h3>
@@ -95,7 +99,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="grid-item">
               <div class="feature-box">
                 <div class="feature-icon"><i class="fas fa-lightbulb"></i></div>
                 <h3 class="feature-title">Thiết Kế Sáng Tạo</h3>
@@ -105,7 +109,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="grid-item">
               <div class="feature-box">
                 <div class="feature-icon"><i class="fas fa-heart"></i></div>
                 <h3 class="feature-title">Khách Hàng Là Trung Tâm</h3>
@@ -121,8 +125,8 @@
 
         <section class="about-section text-center bg-light-gray">
           <h2 class="section-subtitle">Gặp Gỡ Đội Ngũ</h2>
-          <div class="row justify-content-center">
-            <div class="col-md-4 col-lg-3">
+          <div class="grid grid-3 team-grid">
+            <div class="grid-item">
               <div class="team-member">
                 <img
                   src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=500"
@@ -133,7 +137,7 @@
                 <p class="team-role">Nhà sáng lập & CEO</p>
               </div>
             </div>
-            <div class="col-md-4 col-lg-3">
+            <div class="grid-item">
               <div class="team-member">
                 <img
                   src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=500"
@@ -144,7 +148,7 @@
                 <p class="team-role">Trưởng phòng Thiết kế</p>
               </div>
             </div>
-            <div class="col-md-4 col-lg-3">
+            <div class="grid-item">
               <div class="team-member">
                 <img
                   src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500"
@@ -162,15 +166,15 @@
 
     <footer class="footer">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+        <div class="grid grid-4 footer-grid">
+          <div class="grid-item">
             <div class="footer-column">
               <h4>Về ABC Shop</h4>
               <p>
                 Cửa hàng thời trang ABC mang đến những sản phẩm chất lượng cao
                 với phong cách hiện đại, giúp bạn tự tin thể hiện cá tính.
               </p>
-              <div class="social-icons mt-3">
+              <div class="social-icons">
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
                 <a href="#"><i class="fab fa-youtube"></i></a>
@@ -178,7 +182,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+          <div class="grid-item">
             <div class="footer-column">
               <h4>Hỗ trợ</h4>
               <ul>
@@ -189,7 +193,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+          <div class="grid-item">
             <div class="footer-column">
               <h4>Liên kết</h4>
               <ul>
@@ -200,7 +204,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
+          <div class="grid-item">
             <div class="footer-column">
               <h4>Liên hệ</h4>
               <ul>

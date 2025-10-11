@@ -6,16 +6,12 @@
     <title>Chi tiết sản phẩm - Shop Thời Trang ABC</title>
 
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap-grid.min.css"
-      rel="stylesheet"
-    />
-
-    <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
 
     <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/grid.css" />
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/product-detail.css" />
     <link rel="stylesheet" href="css/products.css" />
@@ -25,27 +21,29 @@
   </head>
   <body>
     <header class="header">
-      <div class="container d-flex justify-content-between align-items-center">
-        <h1 class="logo"><a href="index.html">ABC Shop</a></h1>
-        <nav class="navigation">
-          <ul class="nav-list">
-            <li><a href="index.html" class="nav-link">Trang chủ</a></li>
-            <li>
-              <a href="products.html" class="nav-link active">Sản phẩm</a>
-            </li>
-            <li><a href="about.html" class="nav-link">Về chúng tôi</a></li>
-            <li><a href="contact.html" class="nav-link">Liên hệ</a></li>
-          </ul>
-        </nav>
-        <div class="header-actions">
-          <a href="login.html" aria-label="Tài khoản"
-            ><i class="fas fa-user"></i
-          ></a>
-          <a href="cart.html" aria-label="Giỏ hàng"
-            ><i class="fas fa-shopping-bag"></i
-          ></a>
-          <div class="menu-toggle" id="menu-toggle">
-            <i class="fas fa-bars"></i>
+      <div class="container">
+        <div class="header-wrapper">
+          <h1 class="logo"><a href="index.html">ABC Shop</a></h1>
+          <nav class="navigation">
+            <ul class="nav-list">
+              <li><a href="index.html" class="nav-link">Trang chủ</a></li>
+              <li>
+                <a href="products.html" class="nav-link active">Sản phẩm</a>
+              </li>
+              <li><a href="about.html" class="nav-link">Về chúng tôi</a></li>
+              <li><a href="contact.html" class="nav-link">Liên hệ</a></li>
+            </ul>
+          </nav>
+          <div class="header-actions">
+            <a href="login.html" aria-label="Tài khoản"
+              ><i class="fas fa-user"></i
+            ></a>
+            <a href="cart.html" aria-label="Giỏ hàng"
+              ><i class="fas fa-shopping-bag"></i
+            ></a>
+            <div class="menu-toggle" id="menu-toggle">
+              <i class="fas fa-bars"></i>
+            </div>
           </div>
         </div>
       </div>
@@ -53,10 +51,10 @@
 
     <main>
       <div class="container py-5">
-        <div class="row">
-          <div class="col-lg-6">
+        <div class="layout-two-col product-main-layout">
+          <div class="product-gallery-section">
             <div class="product-gallery">
-              <div class="main-image-container mb-3">
+              <div class="main-image-container">
                 <img
                   src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=800"
                   alt="Áo thun đen"
@@ -89,7 +87,7 @@
             </div>
           </div>
 
-          <div class="col-lg-6">
+          <div class="product-info-section">
             <div class="product-info-details">
               <h1 class="product-title">Áo Thun Đen In Hình</h1>
               <p class="product-price-detail">320.000đ</p>
@@ -123,98 +121,94 @@
               </div>
 
               <a href="cart.html" class="btn btn-add-to-cart">
-                <i class="fas fa-shopping-cart me-2"></i>Thêm vào giỏ
+                <i class="fas fa-shopping-cart"></i> Thêm vào giỏ
               </a>
             </div>
           </div>
         </div>
 
-        <div class="row mt-5">
-          <div class="col-12">
-            <div class="product-tabs">
-              <div class="tab-header">
-                <button class="tab-link active" data-tab="description">
-                  Mô tả chi tiết
-                </button>
-                <button class="tab-link" data-tab="reviews">
-                  Đánh giá (3)
-                </button>
+        <div class="product-tabs-section">
+          <div class="product-tabs">
+            <div class="tab-header">
+              <button class="tab-link active" data-tab="description">
+                Mô tả chi tiết
+              </button>
+              <button class="tab-link" data-tab="reviews">Đánh giá (3)</button>
+            </div>
+            <div class="tab-content">
+              <div class="tab-pane active" id="description">
+                <p>
+                  Đây là phần mô tả chi tiết về sản phẩm. Chất liệu cotton cao
+                  cấp, thấm hút mồ hôi tốt. Đường may tỉ mỉ, chắc chắn. Hình in
+                  sử dụng công nghệ tiên tiến, không bong tróc sau nhiều lần
+                  giặt. Hướng dẫn bảo quản: Giặt ở nhiệt độ thường, không dùng
+                  chất tẩy, phơi ở nơi thoáng mát.
+                </p>
               </div>
-              <div class="tab-content">
-                <div class="tab-pane active" id="description">
-                  <p>
-                    Đây là phần mô tả chi tiết về sản phẩm. Chất liệu cotton cao
-                    cấp, thấm hút mồ hôi tốt. Đường may tỉ mỉ, chắc chắn. Hình
-                    in sử dụng công nghệ tiên tiến, không bong tróc sau nhiều
-                    lần giặt. Hướng dẫn bảo quản: Giặt ở nhiệt độ thường, không
-                    dùng chất tẩy, phơi ở nơi thoáng mát.
-                  </p>
-                </div>
-                <div class="tab-pane" id="reviews">
-                  <p>Hiện chưa có đánh giá nào cho sản phẩm này.</p>
-                </div>
+              <div class="tab-pane" id="reviews">
+                <p>Hiện chưa có đánh giá nào cho sản phẩm này.</p>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="row mt-5">
-          <div class="col-12">
-            <h2 class="section-title">Sản phẩm liên quan</h2>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-4">
-            <div class="product-card">
-              <a href="#"
-                ><img
-                  src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=600"
-                  alt="Sản phẩm liên quan"
-                  class="product-image"
-              /></a>
-              <div class="product-info">
-                <h3 class="product-name">Áo Thun Cam</h3>
-                <p class="product-price">290.000đ</p>
+        <div class="related-products-section">
+          <h2 class="section-title">Sản phẩm liên quan</h2>
+          <div class="grid grid-4">
+            <div class="grid-item">
+              <div class="product-card">
+                <a href="#"
+                  ><img
+                    src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=600"
+                    alt="Sản phẩm liên quan"
+                    class="product-image"
+                /></a>
+                <div class="product-info">
+                  <h3 class="product-name">Áo Thun Cam</h3>
+                  <p class="product-price">290.000đ</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-4">
-            <div class="product-card">
-              <a href="#"
-                ><img
-                  src="https://images.unsplash.com/photo-1622470953794-3ed94055925b?w=600"
-                  alt="Sản phẩm liên quan"
-                  class="product-image"
-              /></a>
-              <div class="product-info">
-                <h3 class="product-name">Áo Sơ Mi Trắng</h3>
-                <p class="product-price">450.000đ</p>
+            <div class="grid-item">
+              <div class="product-card">
+                <a href="#"
+                  ><img
+                    src="https://images.unsplash.com/photo-1622470953794-3ed94055925b?w=600"
+                    alt="Sản phẩm liên quan"
+                    class="product-image"
+                /></a>
+                <div class="product-info">
+                  <h3 class="product-name">Áo Sơ Mi Trắng</h3>
+                  <p class="product-price">450.000đ</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-4">
-            <div class="product-card">
-              <a href="#"
-                ><img
-                  src="https://images.unsplash.com/photo-1611312449412-6cefac5dc2b9?w=600"
-                  alt="Sản phẩm liên quan"
-                  class="product-image"
-              /></a>
-              <div class="product-info">
-                <h3 class="product-name">Áo Hoodie Nỉ Xám</h3>
-                <p class="product-price">590.000đ</p>
+            <div class="grid-item">
+              <div class="product-card">
+                <a href="#"
+                  ><img
+                    src="https://images.unsplash.com/photo-1611312449412-6cefac5dc2b9?w=600"
+                    alt="Sản phẩm liên quan"
+                    class="product-image"
+                /></a>
+                <div class="product-info">
+                  <h3 class="product-name">Áo Hoodie Nỉ Xám</h3>
+                  <p class="product-price">590.000đ</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-4">
-            <div class="product-card">
-              <a href="#"
-                ><img
-                  src="https://images.unsplash.com/photo-1604176354204-9268737828e4?w=600"
-                  alt="Sản phẩm liên quan"
-                  class="product-image"
-              /></a>
-              <div class="product-info">
-                <h3 class="product-name">Quần Jean Xanh</h3>
-                <p class="product-price">680.000đ</p>
+            <div class="grid-item">
+              <div class="product-card">
+                <a href="#"
+                  ><img
+                    src="https://images.unsplash.com/photo-1604176354204-9268737828e4?w=600"
+                    alt="Sản phẩm liên quan"
+                    class="product-image"
+                /></a>
+                <div class="product-info">
+                  <h3 class="product-name">Quần Jean Xanh</h3>
+                  <p class="product-price">680.000đ</p>
+                </div>
               </div>
             </div>
           </div>
@@ -224,15 +218,15 @@
 
     <footer class="footer">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+        <div class="grid grid-4 footer-grid">
+          <div class="grid-item">
             <div class="footer-column">
               <h4>Về ABC Shop</h4>
               <p>
                 Cửa hàng thời trang ABC mang đến những sản phẩm chất lượng cao
                 với phong cách hiện đại, giúp bạn tự tin thể hiện cá tính.
               </p>
-              <div class="social-icons mt-3">
+              <div class="social-icons">
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
                 <a href="#"><i class="fab fa-youtube"></i></a>
@@ -240,7 +234,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+          <div class="grid-item">
             <div class="footer-column">
               <h4>Hỗ trợ</h4>
               <ul>
@@ -251,7 +245,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+          <div class="grid-item">
             <div class="footer-column">
               <h4>Liên kết</h4>
               <ul>
@@ -262,7 +256,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
+          <div class="grid-item">
             <div class="footer-column">
               <h4>Liên hệ</h4>
               <ul>

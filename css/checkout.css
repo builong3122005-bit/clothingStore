@@ -8,6 +8,16 @@
   border-bottom: 1px solid #eee;
 }
 
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-col {
+  width: 100%;
+}
+
 .checkout-form {
   border: 1px solid #eee;
   padding: 30px;
@@ -20,7 +30,7 @@
   border-radius: 5px;
   background-color: var(--secondary-color);
   position: sticky;
-  top: 120px; /* Giữ cố định khi cuộn */
+  top: 120px;
 }
 
 .order-items {
@@ -63,27 +73,6 @@
 
 .payment-methods {
   margin: 30px 0;
-}
-
-.payment-option {
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  margin-bottom: 10px;
-}
-
-.payment-option label {
-  font-weight: 600;
-  margin-left: 10px;
-}
-
-.btn-order {
-  width: 100%;
-  padding: 15px;
-  font-size: 1.1rem;
-}
-.payment-methods {
-  margin: 30px 0;
   border-top: 1px solid #ddd;
   padding-top: 20px;
 }
@@ -117,6 +106,7 @@
   cursor: pointer;
   font-weight: 600;
   color: #333;
+  margin: 0;
 }
 
 .payment-option input[type="radio"] {
@@ -138,16 +128,22 @@
   text-align: center;
   color: #555;
 }
-.header-actions a {
-  transition: color 0.3s ease;
+
+.btn-order {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.1rem;
 }
 
-.header-actions a:hover,
-.header-actions a.active {
-  color: var(--accent-color);
-}
-@media (max-width: 991.98px) {
-  .checkout-form {
+/* Responsive */
+@media (max-width: 991px) {
+  .checkout-section {
     margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .form-row {
+    grid-template-columns: 1fr;
   }
 }

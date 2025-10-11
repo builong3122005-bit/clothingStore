@@ -1,59 +1,184 @@
-/* css/contact.css */
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <title>Liên hệ - Shop ABC</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-.contact-title {
-  font-size: 1.8rem;
-  font-weight: 600;
-  margin-bottom: 20px;
-  color: var(--primary-color);
-}
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-.contact-intro {
-  margin-bottom: 30px;
-  line-height: 1.7;
-  color: #555;
-}
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/grid.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/forms.css" />
+    <link rel="stylesheet" href="css/contact.css" />
 
-.contact-details {
-  list-style: none;
-  padding: 0;
-}
+    <!-- font-icon -->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-wrapper">
+          <h1 class="logo"><a href="index.html">ABC Shop</a></h1>
+          <nav class="navigation">
+            <ul class="nav-list">
+              <li><a href="index.html" class="nav-link">Trang chủ</a></li>
+              <li><a href="products.html" class="nav-link">Sản phẩm</a></li>
+              <li><a href="about.html" class="nav-link">Về chúng tôi</a></li>
+              <li><a href="contact.html" class="nav-link active">Liên hệ</a></li>
+              <li><a href="blog.html" class="nav-link">Blog</a></li>
+            </ul>
+          </nav>
+          <div class="header-actions">
+            <a href="login.html" aria-label="Tài khoản"
+              ><i class="fas fa-user"></i
+            ></a>
+            <a href="cart.html" aria-label="Giỏ hàng"
+              ><i class="fas fa-shopping-bag"></i
+            ></a>
+            <div class="menu-toggle" id="menu-toggle">
+              <i class="fas fa-bars"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
 
-.contact-details li {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 20px;
-  font-size: 1.05rem;
-}
+    <main>
+      <div class="page-header"><h1>Liên hệ với chúng tôi</h1></div>
+      <div class="container py-5">
+        <div class="layout-two-col contact-layout">
+          <div class="grid-item">
+            <div class="contact-info-wrapper">
+              <h2 class="contact-title">Thông tin liên hệ</h2>
+              <p class="contact-intro">
+                Chúng tôi luôn sẵn sàng lắng nghe bạn. Vui lòng liên hệ qua
+                thông tin dưới đây hoặc điền vào biểu mẫu bên cạnh.
+              </p>
+              <ul class="contact-details">
+                <li>
+                  <i class="fas fa-map-marker-alt"></i
+                  ><span>19 Lê Thánh Tông, Hoàn Kiếm, Hà Nội</span>
+                </li>
+                <li>
+                  <i class="fas fa-phone"></i><span>(024) 39 876 543</span>
+                </li>
+                <li>
+                  <i class="fas fa-envelope"></i
+                  ><span>support@abcshop.com</span>
+                </li>
+                <li>
+                  <i class="fas fa-clock"></i
+                  ><span>Giờ làm việc: 08:30 - 21:30 (T2 - CN)</span>
+                </li>
+              </ul>
+              <div class="map-container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.113115933614!2d105.8509539153556!3d21.02813999312134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab95335821a1%3A0x80c255dbe36879e6!2zTmjDoCBow6F0IEzhu5duIEjDoCBO4buZaQ!5e0!3m2!1svi!2s!4v1677654321098!5m2!1svi!2s"
+                  width="100%"
+                  height="300"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="form-wrapper contact-form-wrapper">
+              <h2 class="contact-title text-center">
+                Gửi tin nhắn cho chúng tôi
+              </h2>
+              <form>
+                <div class="form-group">
+                  <label for="contact-name">Họ và tên</label>
+                  <input type="text" id="contact-name" required />
+                </div>
+                <div class="form-group">
+                  <label for="contact-email">Email</label>
+                  <input type="email" id="contact-email" required />
+                </div>
+                <div class="form-group">
+                  <label for="contact-subject">Chủ đề</label>
+                  <input type="text" id="contact-subject" required />
+                </div>
+                <div class="form-group">
+                  <label for="contact-message">Nội dung tin nhắn</label>
+                  <textarea id="contact-message" rows="6" required></textarea>
+                </div>
+                <button type="submit" class="btn">Gửi đi</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
-.contact-details i {
-  font-size: 1.2rem;
-  color: var(--accent-color);
-  width: 35px; /* Dành không gian cho icon để các dòng thẳng hàng */
-  margin-top: 4px;
-}
+    <footer class="footer">
+      <div class="container">
+        <div class="grid grid-4 footer-grid">
+          <div class="grid-item">
+            <div class="footer-column">
+              <h4>Về ABC Shop</h4>
+              <p>
+                Cửa hàng thời trang ABC mang đến những sản phẩm chất lượng cao
+                với phong cách hiện đại, giúp bạn tự tin thể hiện cá tính.
+              </p>
+              <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="footer-column">
+              <h4>Hỗ trợ</h4>
+              <ul>
+                <li><a href="#">Câu hỏi thường gặp</a></li>
+                <li><a href="#">Chính sách giao hàng</a></li>
+                <li><a href="#">Chính sách đổi trả</a></li>
+                <li><a href="#">Chính sách bảo mật</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="footer-column">
+              <h4>Liên kết</h4>
+              <ul>
+                <li><a href="about.html">Về chúng tôi</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="#">Tuyển dụng</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="footer-column">
+              <h4>Liên hệ</h4>
+              <ul>
+                <li>
+                  <i class="fas fa-map-marker-alt me-2"></i>19 Lê Thánh Tông,
+                  Hoàn Kiếm, Hà Nội
+                </li>
+                <li><i class="fas fa-phone me-2"></i>(024) 39 876 543</li>
+                <li><i class="fas fa-envelope me-2"></i>support@abcshop.com</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2025 ABC Shop. Thiết kế và phát triển bởi bạn.</p>
+        </div>
+      </div>
+    </footer>
 
-.contact-details span {
-  flex: 1;
-}
-
-.map-container {
-  border: 1px solid #eee;
-  padding: 5px;
-  border-radius: 5px;
-  overflow: hidden; /* Đảm bảo iframe cũng được bo góc */
-}
-
-.map-container iframe {
-  border-radius: 4px;
-  vertical-align: middle; /* Loại bỏ khoảng trống thừa phía dưới iframe */
-}
-
-/* Ghi đè một vài style từ forms.css để phù hợp hơn */
-.form-wrapper {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  padding: 40px;
-  border: 1px solid #eee;
-  border-radius: 5px;
-}
+    <script src="js/main.js"></script>
+  </body>
+</html>
