@@ -4,19 +4,15 @@
     <title>Giỏ hàng - Shop ABC</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-
-    <!-- font-icon -->
-    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
-
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/grid.css" />
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/cart.css" />
+    <link rel="stylesheet" href="css/icons.css" />
   </head>
   <body>
     <header class="header">
@@ -33,14 +29,18 @@
             </ul>
           </nav>
           <div class="header-actions">
-            <a href="login.html" aria-label="Tài khoản"
-              ><i class="fas fa-user"></i
-            ></a>
-            <a href="cart.html" aria-label="Giỏ hàng" class="active"
-              ><i class="fas fa-shopping-bag"></i
-            ></a>
+            <a href="login.html" aria-label="Tài khoản">
+              <img src="icons/user.png" alt="Tài khoản" class="icon-img" />
+            </a>
+            <a href="cart.html" aria-label="Giỏ hàng" class="active">
+              <img
+                src="icons/shopping-bag.png"
+                alt="Giỏ hàng"
+                class="icon-img"
+              />
+            </a>
             <div class="menu-toggle" id="menu-toggle">
-              <i class="fas fa-bars"></i>
+              <img src="icons/menu.png" alt="Menu" class="icon-img" />
             </div>
           </div>
         </div>
@@ -77,7 +77,7 @@
                   </div>
                   <div class="cart-item-remove-wrapper">
                     <button class="remove-item-btn" aria-label="Xóa sản phẩm">
-                      <i class="fas fa-trash-alt"></i>
+                      <img src="icons/trash.png" alt="Xóa" class="icon-img" />
                     </button>
                   </div>
                 </div>
@@ -104,16 +104,20 @@
                   </div>
                   <div class="cart-item-remove-wrapper">
                     <button class="remove-item-btn" aria-label="Xóa sản phẩm">
-                      <i class="fas fa-trash-alt"></i>
+                      <img src="icons/trash.png" alt="Xóa" class="icon-img" />
                     </button>
                   </div>
                 </div>
               </div>
             </div>
             <div class="cart-actions">
-              <a href="products.html" class="btn btn-outline"
-                ><i class="fas fa-arrow-left me-2"></i>Tiếp tục mua sắm</a
-              >
+              <a href="products.html" class="btn btn-outline">
+                <img
+                  src="icons/arrow-left.png"
+                  alt=""
+                  class="icon-img me-2"
+                />Tiếp tục mua sắm
+              </a>
             </div>
           </div>
 
@@ -152,10 +156,24 @@
                 với phong cách hiện đại, giúp bạn tự tin thể hiện cá tính.
               </p>
               <div class="social-icons">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="#"
+                  ><img
+                    src="icons/facebook.png"
+                    alt="Facebook"
+                    class="icon-img"
+                /></a>
+                <a href="#"
+                  ><img
+                    src="icons/instagram.png"
+                    alt="Instagram"
+                    class="icon-img"
+                /></a>
+                <a href="#"
+                  ><img src="icons/youtube.png" alt="YouTube" class="icon-img"
+                /></a>
+                <a href="#"
+                  ><img src="icons/tiktok.png" alt="TikTok" class="icon-img"
+                /></a>
               </div>
             </div>
           </div>
@@ -186,11 +204,23 @@
               <h4>Liên hệ</h4>
               <ul>
                 <li>
-                  <i class="fas fa-map-marker-alt me-2"></i>19 Lê Thánh Tông,
-                  Hoàn Kiếm, Hà Nội
+                  <img src="icons/map-pin.png" alt="" class="icon-img me-2" />19
+                  Lê Thánh Tông, Hoàn Kiếm, Hà Nội
                 </li>
-                <li><i class="fas fa-phone me-2"></i>(024) 39 876 543</li>
-                <li><i class="fas fa-envelope me-2"></i>support@abcshop.com</li>
+                <li>
+                  <img
+                    src="icons/phone.png"
+                    alt=""
+                    class="icon-img me-2"
+                  />(024) 39 876 543
+                </li>
+                <li>
+                  <img
+                    src="icons/mail.png"
+                    alt=""
+                    class="icon-img me-2"
+                  />support@abcshop.com
+                </li>
               </ul>
             </div>
           </div>
