@@ -1,0 +1,35 @@
+/* css/auth.css */
+html,
+body {
+  height: 100%;
+}
+
+/* Class để căn giữa trang */
+body.auth-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+/* Đặt form-wrapper làm gốc định vị cho nút back */
+.form-wrapper {
+  position: relative;
+}
+
+/* Nút quay về trang chủ */
+.back-to-home {
+  position: absolute;
+  top: 40px; /* Điều chỉnh vị trí top */
+  left: 40px; /* Điều chỉnh vị trí left */
+  font-size: 1.5rem;
+  color: #555;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  z-index: 10;
+}
+
+.back-to-home:hover {
+  color: var(--accent-color);
+}
